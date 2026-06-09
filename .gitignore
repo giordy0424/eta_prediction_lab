@@ -1,0 +1,28 @@
+# Data (download from Kaggle)
+data/*
+!data/.gitkeep
+*.csv
+*.osrm
+*.osrm.*
+osrm_data/*
+!osrm_data/manhattan.osm.pbf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.enriched.tmp
+errors_*.csv
