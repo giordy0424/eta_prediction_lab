@@ -4,7 +4,7 @@ Travel time prediction for last-mile logistics using open data (OpenStreetMap) a
 
 **Goal —** Overcome the economic barrier of commercial traffic APIs (e.g. Google Maps: ~$10,950 for a 1500×1500 matrix) by building an adjacency-matrix inference system based on open-source resources.
 
-**Approach —** The NYC Taxi Trip Duration dataset (Kaggle, ~1.22M Manhattan rides) is enriched with OSRM estimates, topological features (turns, intersections), and temporal encoding. A naive model (MLP) reproduces OSRM from coordinates alone (R²~0.95). Residual architectures (DeepResMLP, R²=0.558 on the gap) correct the discrepancy between static estimates and actual duration.
+**Approach —** The NYC Taxi Trip Duration dataset (Kaggle, 1.22M Manhattan rides) is enriched with OSRM estimates, topological features (turns, intersections), and temporal encoding. A naive model (MLP) reproduces OSRM from coordinates alone (R²0.95). Residual architectures (DeepResMLP, R²=0.558 on the gap) correct the discrepancy between static estimates and actual duration.
 
 **Inspiration —** Boeing et al. (2026) "Travel time prediction from sparse open data", showing that OSM features alone (traffic lights, intersections, turns) can generate accurate ETAs without historical traffic data.
 
